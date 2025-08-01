@@ -12,7 +12,7 @@ export default function SiteDataContextProvider({ children }) {
         { name: "home.js", path: "/", icon: js },
         { name: "about.html", path: "/about", icon: html },
         { name: "projects.json", path: "/projects", icon: code },
-        { name: "contact.ts", path: "/contact", icon: typescript },
+        { name: "contact.ts", path: "/contact", icon: typescript }
         // { name: "theme.css", path: "/theme", icon: css },
     ];
 
@@ -35,7 +35,7 @@ export default function SiteDataContextProvider({ children }) {
             },
             {
                 name: "Facebook",
-                url: "",
+                url: "https://www.facebook.com/islam.nassef.35/",
             },
         ],
     };

@@ -83,6 +83,7 @@ export default function Home() {
                                             <Link
                                                 to={link.url}
                                                 className="space-x-2  "
+                                                target="_blank"
                                             >
                                                 <i
                                                     className={`fa-brands fa-${link.name.toLowerCase()}`}
