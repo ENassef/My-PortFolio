@@ -13,10 +13,10 @@ export default function About() {
             <div className="p-12 text-white space-y-6"  data-aos-easing="linear" data-aos="fade-up" data-aos-duration='400'>
                 <div className="space-y-3">
                     {/* header */}
-                    <h1 className="text-4xl font-medium italic text-teal-300 ">
-                        About Me{" "}
+                    <h1 className="text-4xl font-medium italic text-teal-300 text-center md:text-start ">
+                        About Me
                     </h1>
-                    <p>
+                    <p className="md:text-start text-center">
                         <span className="text-teal-300 text-xl">I</span> am a
                         driven Front-End Developer whose passion for programming
                         sparked in childhood and has grown into a dedicated
@@ -25,7 +25,7 @@ export default function About() {
                         completing a professional course at Route Academy,
                         securing a certification in front-end development.
                     </p>
-                    <p>
+                    <p className="md:text-start text-center">
                         <span className="text-teal-300 text-xl">W</span>ith
                         expertise in HTML, CSS, JavaScript, and modern
                         frameworks like React, I specialize in crafting

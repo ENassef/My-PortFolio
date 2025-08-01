@@ -49,11 +49,5 @@ html {
 /* Smooth scrolling and hide vertical scrollbar for div with overflow-x-auto */
 div.overflow-x-auto {
   scroll-behavior: smooth;
-  -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: thin; /* Firefox */
-}
-
-/* Hide vertical scrollbar for WebKit */
-div.overflow-x-auto::-webkit-scrollbar:vertical {
-  display: none;
 }

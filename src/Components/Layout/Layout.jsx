@@ -15,30 +15,32 @@ export default function Layout() {
                 {/* Icons nav */}
                 <IconNav />
                 <Explorer />
-                <section className="flex-7 w-full min-w-0 overflow-x-hidden">
+                <section className="flex-7 w-full min-w-0">
                     <div className="bg-side-main">
-                        <ul className="inline-flex space-x-2 pr-4">
-                            {listData.map((item) => (
-                                <NavLink
-                                    to={item.path}
-                                    key={item.name}
-                                    className={({ isActive }) =>
-                                        isActive ? "activeList" : "text-gray-300"
-                                    }
-                                >
-                                    <li className="flex items-center space-x-2 px-6 py-2 text-white transition-all whitespace-nowrap">
-                                        <img
-                                            src={item.icon}
-                                            alt={`${item.name} icon`}
-                                            className="w-4 h-4"
-                                        />
-                                        <span>{item.name}</span>
-                                    </li>
-                                </NavLink>
-                            ))}
-                        </ul>
+                        <div className="overflow-x-auto">
+                            <ul className="inline-flex space-x-2 pr-4 no-scrollbar">
+                                {listData.map((item) => (
+                                    <NavLink
+                                        to={item.path}
+                                        key={item.name}
+                                        className={({ isActive }) =>
+                                            isActive ? "activeList" : "text-gray-300"
+                                        }
+                                    >
+                                        <li className="flex items-center space-x-2 px-6 py-2 text-white transition-all whitespace-nowrap">
+                                            <img
+                                                src={item.icon}
+                                                alt={`${item.name} icon`}
+                                                className="w-4 h-4"
+                                            />
+                                            <span>{item.name}</span>
+                                        </li>
+                                    </NavLink>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-                    <div className="overflow-y-auto"  style={{ height: 'calc(100vh - 100px)' }}>
+                    <div className="overflow-y-auto" style={{ height: 'calc(100vh - 100px)' }}>
                         <Outlet />
                     </div>
                 </section>

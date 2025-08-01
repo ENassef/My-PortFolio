@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function IconNav() {
     return (
-        <div className="bg-main flex flex-col w-fit  justify-between">
+        <div className="bg-main md:flex flex-col w-fit hidden justify-between">
             {/* Main Navigation Icons */}
             <div className="flex flex-col justify-center">
                 {/* Home/Explore Icon */}
@@ -63,7 +63,7 @@ export default function IconNav() {
             </div>
 
             {/* Other Icons  */}
-            <div className="flex flex-col">
+            <div className="flex flex-col pb-16">
 
                 {/* About Icon */}
                 <NavLink

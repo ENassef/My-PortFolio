@@ -20,7 +20,7 @@ export default function Card({ project }) {
                     <p className="text-balance leading-6 text-gray-400 line-clamp-4">
                         {desc}
                     </p>
-                    <div className="grid grid-cols-6 md:grid-cols-4 lg:grid-cols-4 pl-1 gap-2">
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 pl-1 gap-2">
                         {techs.map((tech) => {
                             return (
                                 <span className="py-1 border border-teal-300 rounded-2xl text-center h-fit text-sm">
