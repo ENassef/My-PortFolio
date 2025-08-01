@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-main: -apple-system, sans-serif;
+  --font-sec: monospace, sans-serif;
+  --color-main: #24292E;
+  --color-side-main: #1F2428;
+}
+*{
+  box-sizing: border-box
+}
+.active {
+  @apply border-l-2 border-gray-400 text-white;
+}
+
+.activeList {
+  @apply border-t-2 border-gray-400 text-white bg-[#2E3440];
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-side-main);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3B4252;
+  border-radius: 2px;
+  border: 2px solid var(--color-side-main);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #434C5E;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #3B4252 var(--color-side-main);
+  overflow: hidden;
+  text-transform: capitalize;
+}
+
+/* Smooth scrolling and hide vertical scrollbar for div with overflow-x-auto */
+div.overflow-x-auto {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: thin; /* Firefox */
+}
+
+/* Hide vertical scrollbar for WebKit */
+div.overflow-x-auto::-webkit-scrollbar:vertical {
+  display: none;
+}
