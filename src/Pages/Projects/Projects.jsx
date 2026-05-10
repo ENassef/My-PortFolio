@@ -30,8 +30,8 @@ export default function Projects() {
             name: "VSCode Themed Portfolio",
             imgSrc: PortFolio,
             desc: "My personal portfolio with the Visual Studio Code IDE theme.",
-            source: "https://github.com/ENassef/E-Commerce",
-            demo: "https://enassef.github.io/Daniels/",
+            source: "https://github.com/ENassef/My-PortFolio",
+            demo: "https://enassef.github.io/",
             techs: [
                 "React",
                 "Tailwind CSS",
