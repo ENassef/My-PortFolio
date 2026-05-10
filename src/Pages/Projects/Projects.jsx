@@ -3,6 +3,7 @@ import freshCart from "../../assets/Projects/e-commerce.png";
 import Bakery from "../../assets/Projects/Bakery.png";
 import PortFolio from "../../assets/Projects/PortFolio.png";
 import Daniels from "../../assets/Projects/Daniels.png";
+import IconicTech from "../../assets/Projects/it-egypt.png";
 import { source } from "framer-motion/client";
 import Card from "../../Components/Card/Card";
 import { CornerRightDown } from "lucide-react";
@@ -39,6 +40,21 @@ export default function Projects() {
                 "Lucide ",
                 "AOS ",
                 "Sonner",
+            ],
+        },
+        {
+            name: "Iconic Tech Website",
+            imgSrc: IconicTech,
+            desc: "Professional website for Iconic Technology, specializing in Odoo implementation, custom software development, and ERP solutions. Features modern design with SEO optimization, contact forms, and comprehensive service showcase.",
+            demo: "https://it-egypt.com/",
+            techs: [
+                "React",
+                "Vite",
+                "Tailwind CSS",
+                "Framer Motion",
+                "GSAP",
+                "EmailJS",
+                "SEO Optimization",
             ],
         },
     ];

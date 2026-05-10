@@ -30,8 +30,9 @@ export default function Card({ project }) {
                         })}
                     </div>
                     <div className="space-x-3 text-sm text-teal-400 ">
-                        <a href={source} target="_blank">source</a>
-                        <a href={demo} target="_blank">demo</a>
+                        {source && <a href={source} target="_blank">source</a>}
+                        {source && demo && <span> | </span>}
+                        <a href={demo} target="_blank">live</a>
                     </div>
                 </div>
             </div>
