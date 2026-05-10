@@ -31,7 +31,7 @@ export default function Projects() {
             imgSrc: PortFolio,
             desc: "My personal portfolio with the Visual Studio Code IDE theme.",
             source: "https://github.com/ENassef/My-PortFolio",
-            demo: "https://enassef.github.io/",
+            demo: "https://my-port-folio-rust.vercel.app/",
             techs: [
                 "React",
                 "Tailwind CSS",
@@ -73,7 +73,7 @@ export default function Projects() {
             imgSrc: Daniels,
             desc: "It features a multi-section layout with a navigation menu, placeholder images, and a footer with social links, serving as a foundation for a professional bakery business site that can be fully customized with real content and styling.",
             source: "https://github.com/ENassef/Daniels",
-            demo: "https://enassef.github.io/Bakery/",
+            demo: "https://enassef.github.io/Daniels/",
             techs: ["html 5 ", "javaScript", "Css 3"],
         },
     ];
